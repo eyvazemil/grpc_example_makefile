@@ -1,4 +1,5 @@
-#include "client_implementation.h"
+#include "../include/client_implementation.h"
+
 #include <grpcpp/client_context.h>
 
 ClientImplementation::ClientImplementation(std::shared_ptr<grpc::Channel> channel) : m_stub(greeting::Greeting::NewStub(channel)) {}

@@ -1,4 +1,4 @@
-#include "server_implementation.h"
+#include "../include/server_implementation.h"
 
 grpc::Status ServerImplementation::sendRequest(grpc::ServerContext * context, 
     const greeting::Request * request, greeting::Response * response
